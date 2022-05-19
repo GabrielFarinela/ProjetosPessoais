@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="style.css">
+    <title>CRUD</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="../CRUD/img/icons8-home.svg" alt="logo">
+    </header>
+
+    <main>
+        <div class="principal">
+            <div class="nome">
+                <h1>CRUD de usuários</h1>
+            </div>
+            <table id="tabelaCliente" class="corpo-formulario">
+                <thead class="formulario">
+                    <th class="formulario-cabeçalho">Nome</th>
+                    <th class="formulario-cabeçalho">Sobrenome</th>
+                    <th class="formulario-cabeçalho">E-mail</th>
+                    <th class="formulario-cabeçalho">Telefone</th>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <div>
+                <button id="cadastrarUsuario" class="botao-cadastrar"><strong>CADASTRAR</strong></button>
+            </div>
+            <div id="cadastrar" class="cadastrar">
+                <div class="cadastrar-conteudo">    
+                    <section class="cadastrar-header">
+                        <h1 class="cadastrar-header-texto">CADASTRAR NOVOS USUÁRIOS</h1> 
+                    </section> 
+                    <section>               
+                        <form id="formulario" class="cadastrar-formulario">
+                            <div class="campos">
+                                <label class="cadastrar-label" for="nome"><strong>Nome:</strong></label><br>
+                                <input data-index="new" class="cadastrar-input" type="text" name="nome" id="nome" required>
+                            </div>
+                            <div class="campos">
+                                <label class="cadastrar-label" for="sobrenome"><strong>Sobrenome:</strong></label><br>
+                                <input data-index="new" class="cadastrar-input" type="text" name="sobrenome" id="sobrenome" required>
+                            </div>
+                            <div class="campos">
+                                <label class="cadastrar-label" for="email"><strong>Email:</strong></label><br>
+                                <input data-index="new" class="cadastrar-input" type="email" name="email" id="email" required>
+                            </div>
+                            <div class="campos">
+                                <label class="cadastrar-label" for="telefone"><strong>Telefone:</strong></label><br>
+                                <input data-index="new" class="cadastrar-input" type="tel" name="telefone" id="telefone" required>
+                            </div>
+                        </form>
+                    </section>
+                    <section class="cadastrar-botao">
+                        <button id="salvar" class="cadastrar-botao-salvar"><strong>SALVAR</strong></button>
+                        <button id="cancelar" class="cadastrar-botao-cancelar"><strong>CANCELAR</strong></button>    
+                        <button id="limpar" class="cadastrar-botao-limpar"><strong>LIMPAR</strong></button>                
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>@desenvolvido por Gabriel Farinela</p>
+    </footer>
+
+    <script src="script.js" ></script>
+</body>
+</html>

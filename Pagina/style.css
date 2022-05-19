@@ -1,0 +1,59 @@
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #E5E5E5;
+    font-size: 100%;
+    font-family: 'Poppins', sans-serif;}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 48px;
+    text-align: center;
+}
+
+.cabecalho-logo-esquerdo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 87px;
+    gap: 4px;
+}
+
+.cabecalho-meio-link {
+    display: flex;
+    font-weight: 400;
+    size: 22px;
+    gap: 56px;
+    padding-left: 23%;
+}
+
+.cabecalho-link {
+    color: black;
+}
+
+.cabecalho-pesquisa-direita{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 100px;
+}
+
+.cabeçalho-pesquisa {
+    display: block
+    width: 314px;
+    height: 60px;
+    padding-top: 39px;
+    padding-right: 87px;
+    border-radius: 30px;
+    text-align:center;
+    font-size: 22px;
+    border: none;
+}

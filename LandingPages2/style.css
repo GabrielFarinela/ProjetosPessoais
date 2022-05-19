@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #ffffff,
+                                          #f1ceba,
+                                          #d4895d,
+                                          #dd8039,
+                                          #e66427);
+}
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 64px;
+    margin-left: 112px;
+    margin-right: 112px;
+}
+
+.cabecalho-esquerdo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    gap: 9px;
+    cursor: pointer;
+}
+
+.cabecalho-esquerdo-nome {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    color: #6A6A6A;
+    padding-bottom: 5px;
+    text-shadow: 1px 7px 10px rgba(0,0,0,0.2);
+}
+
+.cabecalho-direito-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 45px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cabecalho-link,
+.cabecalho-link-borda {
+    color: rgba(255, 255, 255, 1);
+}
+
+.cabecalho-link-borda {
+    border: 0.4px solid #FFF2E7;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+.corpo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 70px;
+    justify-content: space-between;
+    border-top: 0.4px solid #FFF2E7;
+    padding-top: 35px;
+}
+
+.corpo-esquerdo {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;  
+    margin-left: 80px;  
+
+}
+
+.corpo-direito-imagem {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.corpo-texto-um {
+    font-family: 'Righteous', cursive;
+    font-size: 80px;
+    color: #424242;
+}
+
+.corpo-texto-dois {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #484848;
+}
+
+.corpo-botão {
+    background: linear-gradient(89.76deg, #FA982F 0.18%,
+                                          #FF5E43 99.78%,
+                                          rgba(196, 196,196, 0) 99.78%);
+    width: 333px;
+    height: 79px;
+    border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 36px;
+    border: none;
+    filter: drop-shadow(2px 5px 4px rgba(0, 0, 0, 0.25));
+    margin-top: 109px;
+    cursor: pointer;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    margin-top: 160 px;
+    margin-bottom: 94px;
+    gap: 12px;
+    border-top: 0.4px solid #FFF2E7;
+    padding-top: 50px;
+}
+
+.corpo-botão:hover {
+    background: #424242;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+}
+
+.cabecalho-link:hover{
+    color: #424242;
+}
+.cabecalho-link-borda:hover {
+    color: #424242;
+    border: 0.4px solid #424242;
+}
+
+
+

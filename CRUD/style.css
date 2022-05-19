@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
+
+body {
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   background-color: #3A3845;
+   margin:0;
+   padding: 0;
+}
+
+header {
+    background-color: gainsboro;
+    display: flex;
+    justify-content: center;
+    user-select: none;
+    padding: 15px;
+}
+
+main {
+    background-color: rgb(220, 220, 220);
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+}
+
+footer {
+    color: white;
+    background-color: #00000090;
+    opacity: 0.4;
+    font-size: 2vh;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1vh;
+    user-select: none;
+    text-align: center; 
+    box-shadow: 0 0 1em black;
+}
+
+th {
+    border: 3px solid black;
+    background-color: #d3d3d3;
+    color: black;
+    border-radius: 8px;
+}
+
+td {
+    border: 3px solid black;
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+}
+
+.logo {
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 1em black;
+    user-select: none;
+}
+
+.nome{ 
+    user-select: none;
+    color: white;
+}
+
+.principal {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    padding: 20px;
+    box-shadow: 0 0 1em black;
+    background-color: #393E46;
+    color: gainsboro;
+    gap: 10px;
+    text-align: left;
+    border-radius: 20px;
+}
+
+.corpo-formulario {
+    user-select: none;
+}
+
+.formulario-cabeçalho {
+    height: 35px;
+    width: auto;
+}
+
+.botao-cadastrar {
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #E4E4E4;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 1em black;
+}
+
+.botao-cadastrar:hover, .botao-excluir:hover, .botao-editar:hover {
+    background-color: gold;
+    transform: scale(1.1);
+}
+
+.botao-excluir {
+    background: red;
+}
+
+.botao-editar {
+    background: green;
+}
+
+.botao-editar,
+.botao-excluir {
+    box-shadow: 0 0 1em black;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/*CADASTRAR*/
+
+.cadastrar {
+    position: absolute;
+    background-color: #00000090;
+    color: black;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    user-select: none;
+    opacity: 0;
+    z-index: -1;
+}
+
+.cadastrar.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.cadastrar-conteudo {
+    background-color: white;
+    height: 300px;
+    border-style: outset;
+    box-shadow: 0 0 1em black;
+    border-radius: 10px;
+}
+
+.cadastrar-header-texto {
+    background-color: black;
+    color: white;
+    height: 70px;
+    margin-top: 2px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cadastrar-formulario {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 70px;
+    margin: 3.5vh;
+}
+
+.cadastrar-label {
+    color: black;
+}
+
+.cadastrar-input {
+    border-radius: 5px;
+    height: 25px;
+    box-shadow: 0 0 0.4em black;
+}
+
+.cadastrar-botao {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 60px;
+    height: 35px;
+}
+.cadastrar-botao-salvar{
+    background-color: green;
+}
+
+.cadastrar-botao-cancelar{
+    background-color: red;
+}
+
+.cadastrar-botao-limpar,
+.cadastrar-botao-salvar,
+.cadastrar-botao-cancelar{
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 0.4em black;
+}
+
+.cadastrar-botao-cancelar:hover, .cadastrar-botao-salvar:hover, .cadastrar-botao-limpar:hover {
+    transform:scale(1.1);
+}
+
